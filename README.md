@@ -12,3 +12,6 @@ Backend for test task) :P
 There 2 end points:
 1 localhost:3222/places for GET.
 2 localhost:3222/places for POST({name,description,longtitude,latitude}).
+
+
+Video with setup and task description: https://app.sags.digital/public-share/thread/a45eb340-2ca7-49f8-b304-f0f7b7a8721d
