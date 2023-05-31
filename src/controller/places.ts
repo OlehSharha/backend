@@ -18,3 +18,9 @@ export const addPlace = async (req: Request, res: Response) => {
 
 }
 
+export const removePlace = async (req: Request, res: Response) => {
+	const placeId = req.body;
+	const newPlace = placeService.deletePlace(placeId)
+	res.send(newPlace)
+}
+

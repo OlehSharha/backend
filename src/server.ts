@@ -13,6 +13,6 @@ app.use(cors());
 
 app.use('/places', express.json(), placesRouter);
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3222, () => {
+  console.log('Server is running on port 3222');
 });

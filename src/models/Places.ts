@@ -1,5 +1,4 @@
-import { Column, DataType, Model, Table } from "sequelize-typescript";
-
+import { AllowNull, Column, DataType, Model, Table } from 'sequelize-typescript';
 
 @Table({
 	tableName: 'places',
@@ -8,25 +7,24 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 })
 
 export class Places extends Model {
-
-	@Column( {
-		type: DataType.STRING
-	})
+	@AllowNull(false)
+	@Column({
+		type:DataType.STRING}
+		)
 	name: string;
-
-	@Column( {
-		type: DataType.STRING
-	})
+	@AllowNull(false)
+	@Column({
+		type:DataType.STRING}
+		)
 	description: string;
-
-	@Column( {
-		type: DataType.STRING
-	})
-	latitude: string;
-
-	@Column( {
-		type: DataType.STRING
-	})
-	longtitude: string;
-
+	@AllowNull(false)
+	@Column({
+		type:DataType.FLOAT}
+		)
+	latitude: number;
+	@AllowNull(false)
+	@Column({
+		type:DataType.FLOAT}
+		)
+	longitude: number;
 }
