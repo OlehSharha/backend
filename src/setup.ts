@@ -1,7 +1,6 @@
 
 import { Places } from "./models/Places";
-import {dbInit} from '../src/utils/initDB'
-const { sequelize } = require('./models');
+import { dbInit } from '../src/utils/initDB'
 
 (async () => {
 	dbInit();
